@@ -8,7 +8,8 @@ Channels allow to group [streams][streams].
 | ---- | --------------- |
 | [GET /channel/list](/channels.md#get-channellist) | Get list of channels |
 | [GET /channel/live](/channels.md#get-channellive) | Get list of live channels |
-| [GET /channel/info/:channel](/channels.md#get-channelinfochannel
+| [GET /channel/info/:channel](/channels.md#get-channelinfochannel) | Get channel detail info |
+
 [streams]: /streams.md
 
 ## `GET /channel/list`
