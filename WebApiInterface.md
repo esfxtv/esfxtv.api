@@ -39,7 +39,7 @@ Returns list of channels.
             <td>Page number (1 or more).</td>
         </tr>
         <tr>
-            <td><code>pageSize</code></td>
+            <td><code>pagesize</code></td>
             <td>optional</td>
             <td>int</td>
             <td>Page size (1 or more).</td>
@@ -51,7 +51,7 @@ Returns list of channels.
 
 ```bash
 http://api.esfxtv.com/channel/list
-http://api.esfxtv.com/channel/list?pagenumber=1&pageSize=2
+http://api.esfxtv.com/channel/list?pagenumber=1&pagesize=2
 ```
 
 ### Example Response
