@@ -2,14 +2,14 @@
 
 ***
 
-Channels allow to group streams.
+Channels allow to group [streams][streams].
 
 | Endpoint | Description |
 | ---- | --------------- |
 | [GET /channel/list](/WebApiInterface.md#get-channellist) | Get list of channels |
 | [GET /channel/live](/WebApiInterface.md#get-channellive) | Get list of live channels |
 
-
+[streams]: /streams.md
 
 ## `GET /channel/list`
 
