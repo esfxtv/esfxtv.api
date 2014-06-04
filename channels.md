@@ -15,7 +15,7 @@ Channels allow to group [streams][streams].
 
 Returns list of channels.
 
-### Parameters
+### Request Parameters
 
 <table>
     <thead>
@@ -93,7 +93,7 @@ http://api.esfxtv.com/channel/list?pagenumber=1&pagesize=2
 
 Returns list of live channels.
 
-### Parameters
+### Request Parameters
 
 <table>
     <thead>
