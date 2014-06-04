@@ -94,7 +94,7 @@ http://api.esfxtv.com/stream/getqualities/stucer
 ```
 
 
-## `GET /stream/getqualities/:stream/:quality`
+## `GET /stream/geturl/:stream/:quality`
 
 Returns broadcast url for stream.
 
