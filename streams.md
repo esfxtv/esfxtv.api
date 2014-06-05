@@ -176,8 +176,8 @@ Returns information to embed video on page. Request must contains :channel to ge
 ### Example Request
 
 ```bash
-http://api.esfxtv.com/stream/getinfo/stucer
-http://api.esfxtv.com/stream/getinfo/stucer/e-s-f-x-online
+http://api.esfxtv.com/stream/getinfo/moon
+http://api.esfxtv.com/stream/getinfo/moon/prdota2
 ```
 
 ### Example Response
@@ -185,18 +185,18 @@ http://api.esfxtv.com/stream/getinfo/stucer/e-s-f-x-online
 ```json
 {
 
-    "StreamName": "Stucer",
+    "StreamName": "moon",
     "OnlineView": 0,
     "Rating": {
-        "Like": 32,
-        "View": 432
+        "Like": 72,
+        "View": 5110
     },
-    "ChannelName": "E.S.F.X. Online",
-    "ChannelPreviewUrl": "http://img.cdn.esfxtv.com/Channel/ChannelPreview/BoFm7ogs.cropped.png",
-    "Description": "Здесь мы стримим всякие прикольные моменты из жизни проекта.\r\nхе хе хе",
+    "ChannelName": "PowerRangersDota2",
+    "ChannelPreviewUrl": "http://img.cdn.esfxtv.com/Channel/ChannelPreview/_JPiVumS.cropped.png",
+    "Description": "This is official stream's channel of PowerRangers Dota 2 team. Here you can find all streams of our players and our games.",
     "IsOnline": false,
-    "StreamHtmlValue": "<iframe height='100%' width='100%' src='http://esfxtv.com/stream/share/stucer/esfxtv/e-s-f-x-online'></iframe>",
-    "ChatHtmlValue": "<iframe height='100%' width='100%' src='http://esfxtv.com/ru/Chat/Popup/e-s-f-x-online'></iframe>"
+    "StreamHtmlValue": "<iframe height='100%' width='100%' src='http://esfxtv.com/stream/share/moon/esfxtv/prdota2'></iframe>",
+    "ChatHtmlValue": "<iframe height='100%' width='100%' src='http://esfxtv.com/ru/Chat/Popup/prdota2'></iframe>"
 
 }
 ```
