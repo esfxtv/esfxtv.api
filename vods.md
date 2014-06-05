@@ -55,9 +55,9 @@ http://api.esfxtv.com/vod/list?pagenumber=1&pagesize=2
 
 ```
 
-## `GET /channel/info/:channel`
+## `GET /vod/info/:vod`
 
-Returns information about channel.
+Returns information about vod.
 
 ### Request Parameters
 
@@ -72,10 +72,10 @@ Returns information about channel.
     </thead>
     <tbody>
         <tr>
-            <td><code>:channel</code></td>
+            <td><code>:vod</code></td>
             <td>required</td>
             <td>string</td>
-            <td>Channel friendly name.</td>
+            <td>Vod unique code</td>
         </tr>
     </tbody>
 </table>
@@ -83,7 +83,7 @@ Returns information about channel.
 ### Example Request
 
 ```bash
-http://api.esfxtv.com/channel/info/prdota2
+http://api.esfxtv.com/vod/info/prdota2
 ```
 
 ### Example Response
