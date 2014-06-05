@@ -38,11 +38,21 @@ Returns information about voditem.
 ### Example Request
 
 ```bash
-http://api.esfxtv.com/voditem/info/prdota2
+http://api.esfxtv.com/voditem/info/635374739320000000
 ```
 
 ### Example Response
 
 ```json
+{
 
+    "ViewUrl": "http://str001.cdn.esfx.tv/esfxtv.com/dota_vitya/2014-06-04_10-18_2.mp4",
+    "PartNumber": 2,
+    "Code": 635374739320000000,
+    "PreviewImageUrl": "http://img.cdn.esfxtv.com/Vod/R3GWDa7q.jpg",
+    "Start": "2014-06-04T10:18:52",
+    "End": "2014-06-04T10:28:18",
+    "Duration": 566
+
+}
 ```
