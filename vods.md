@@ -8,6 +8,7 @@ Vod - Video on Demand. Vod relates to [stream][streams].
 | ---- | --------------- |
 | [GET /vod/list](/vods.md#get-vodlist) | Get list of vods |
 | [GET /vod/info/:vod](/vods.md#get-vodinfovod) | Get vod details info |
+| [GET /channel/:channel/vods](/vods.md#get-channelchannelvods) | Get list of vods for channel |
 
 [streams]: /streams.md
 
@@ -176,4 +177,93 @@ http://api.esfxtv.com/vod/info/Ene0VScoWEGX2vDxQ8bNUw
     ]
 
 }
+```
+
+## `GET /channel/:channel/vods`
+
+Returns list of vods for channel.
+
+### Request Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>:channel</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Channel friendly name</td>
+        </tr>
+        <tr>
+            <td><code>pagenumber</code></td>
+            <td>optional</td>
+            <td>int</td>
+            <td>Page number (1 or more).</td>
+        </tr>
+        <tr>
+            <td><code>pagesize</code></td>
+            <td>optional</td>
+            <td>int</td>
+            <td>Page size (1 or more).</td>
+        </tr>        
+    </tbody>
+</table>
+
+### Example Request
+
+```bash
+http://api.esfxtv.com/channel/prdota2/vods
+http://api.esfxtv.com/channel/prdota2/vods?pagenumber=1&pageSize=2
+```
+
+### Example Response
+
+```json
+[
+
+    {
+        "Name": "moon",
+        "Description": "",
+        "Code": "4yFGUTNNPUGVqsuxrIx1NA",
+        "Start": "2014-06-16T07:44:52",
+        "End": "2014-06-16T08:54:18",
+        "Duration": 4166,
+        "PreviewImageUrl": "http://img.cdn.esfxtv.com/Vod/VAXZHhUo.jpg",
+        "Rating": {
+            "Like": 0,
+            "View": 0
+        },
+        "Stream": {
+            "Name": "moon",
+            "TypeName": "EsfxTv"
+        },
+        "ItemsCount": 3
+    },
+    {
+        "Name": "alexei_lipai",
+        "Description": "",
+        "Code": "3m6Uti5RKUedIBCrg8fmdw",
+        "Start": "2014-06-13T15:43:18",
+        "End": "2014-06-13T18:48:49",
+        "Duration": 11131,
+        "PreviewImageUrl": "http://img.cdn.esfxtv.com/Vod/LyHt1ECu.jpg",
+        "Rating": {
+            "Like": 0,
+            "View": 0
+        },
+        "Stream": {
+            "Name": "alexei_lipai",
+            "TypeName": "EsfxTv"
+        },
+        "ItemsCount": 7
+    }
+
+]
 ```
