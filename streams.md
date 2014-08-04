@@ -63,7 +63,7 @@ Returns list of available qualities for stream.
             <td><code>:stream</code></td>
             <td>required</td>
             <td>string</td>
-            <td>Stream Friendly Name</td>
+            <td>Stream Name</td>
         </tr>
     </tbody>
 </table>
@@ -116,7 +116,7 @@ Returns broadcast url for stream.
             <td><code>:stream</code></td>
             <td>required</td>
             <td>string</td>
-            <td>Stream Friendly Name</td>
+            <td>Stream Name</td>
         </tr>
     </tbody>
     <tbody>
@@ -161,7 +161,7 @@ Returns information to embed video on page. Request must contains :channel to ge
             <td><code>:stream</code></td>
             <td>required</td>
             <td>string</td>
-            <td>Stream Friendly Name</td>
+            <td>Stream Name</td>
         </tr>
     </tbody>
     <tbody>
@@ -222,7 +222,7 @@ Returns information to embed video and on page. Can be used without link stream 
             <td><code>:stream</code></td>
             <td>required</td>
             <td>string</td>
-            <td>Stream Friendly Name</td>
+            <td>Stream Name</td>
         </tr>
     </tbody>
     <tbody>
