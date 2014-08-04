@@ -10,6 +10,7 @@ Streams are video broadcasts.
 | [GET /stream/getqualities/:stream](/streams.md#get-streamgetqualitiesstream) | Get list of available available for stream |
 | [GET /stream/geturl/:stream/:quality](/streams.md#get-streamgeturlstreamquality) | Get broadcast url for stream  |
 | [GET /stream/getinfo/:stream/:channel](/streams.md#get-streamgetinfostreamchannel) | Get info about stream to embed video on page |
+| [GET /stream/embedinfo/:stream/:channel](/streams.md#get-streamembedinfostreamchannel) | Get info about stream (without link to channel) to embed video on page |
 
 ## `GET /stream/getqualities`
 
@@ -201,5 +202,82 @@ http://api.esfxtv.com/stream/getinfo/moon/prdota2
 }
 ```
 
+## `GET /stream/embedinfo/:stream/:channel`
 
+Returns information to embed video and on page. Can be used without link stream to channel
+
+### Request Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>:stream</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Stream Friendly Name</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td><code>:channel</code></td>
+            <td>recomended</td>
+            <td>string</td>
+            <td>Channel Friendly Name</td>
+        </tr>
+    </tbody>    
+</table>
+
+### Example Request
+
+```bash
+http://api.esfxtv.com/stream/embedinfo/moon
+http://api.esfxtv.com/stream/embedinfo/moon/prdota2
+```
+
+### Example Response
+
+```json
+
+{
+
+    "StreamName": "moon",
+    "OnlineView": 0,
+    "Rating": {
+        "Like": 89,
+        "View": 6318
+    },
+    "ChannelName": "",
+    "ChannelPreviewUrl": "",
+    "Description": "",
+    "IsOnline": false,
+    "StreamHtmlValue": "<iframe height='100%' width='100%' src='http://esfxtv.com/stream/share/moon/esfxtv'></iframe>",
+    "ChatHtmlValue": "<iframe height='100%' width='100%' src='http://esfxtv.com/ru/Chat/Popup/moon'></iframe>"
+
+}
+
+{
+
+    "StreamName": "moon",
+    "OnlineView": 0,
+    "Rating": {
+        "Like": 89,
+        "View": 6318
+    },
+    "ChannelName": "PowerRangersDota2",
+    "ChannelPreviewUrl": "http://img.cdn.esfxtv.com/Channel/ChannelPreview/_JPiVumS.cropped.png",
+    "Description": "This is official stream's channel of PowerRangers Dota 2 team. Here you can find all streams of our players and our games.",
+    "IsOnline": false,
+    "StreamHtmlValue": "<iframe height='100%' width='100%' src='http://esfxtv.com/stream/share/moon/esfxtv/prdota2'></iframe>",
+    "ChatHtmlValue": "<iframe height='100%' width='100%' src='http://esfxtv.com/ru/Chat/Popup/prdota2'></iframe>"
+
+}
+```
 
