@@ -2,9 +2,10 @@
 
 ***
 
-Chat is where users can interact with each other while watching a [stream][streams].
+Chat is where users can interact with each other while watching a [stream][streams] on [channel][channels].
 
 [streams]: /streams.md
+[channels]: /channels.md
 
 | Endpoint | Description |
 | ---- | --------------- |
